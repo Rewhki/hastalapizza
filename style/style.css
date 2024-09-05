@@ -1,0 +1,97 @@
+/* ALL PAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body main article {
+    padding: calc(5em + 100px) calc(10em + 100px) calc(5em + 100px) calc(10em + 100px);
+}
+
+header #logo {
+    width: 240px;
+    height: 140px;
+    margin-right: 100px;
+}
+
+header #container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header #container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    a {
+        font-size: 30px;
+    }
+}
+
+header #navigation nav{
+    width: 100%;
+    height: 140px;
+    margin-bottom: calc(5em + 10px);
+}
+
+header .nav-link {
+   font-size: large; 
+}
+
+header #navbar-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    color: white;
+}
+
+footer #maps{
+width: 200px;
+height: 200px;
+}
+
+footer h6 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* PAGE INDEX */
+.carousel-inner .carousel-item img{
+    width: 30em;
+    height: auto;
+}
+
+
+/* PAGE CARTE */
+
+#carte #main-carte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .lien-carte {
+        width: 30em;
+        height: 15em;
+        background-color: aqua;
+        border: 3px solid;
+        border-color: red rgb(255, 255, 255) rgb(10, 181, 1);
+        border-radius: 30px;
+        margin: calc(2em + 20px) calc(5em + 30px) calc(2em + 20px) calc(5em + 30px);
+    
+    }
+}
+
+#carte #main-carte .lien-carte:hover {
+    transform: scale(1.2);
+}
