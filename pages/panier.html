@@ -33,8 +33,29 @@
         </header>
 
         <main id="main-panier">
-
+            <h1>Votre Panier</h1>
+            <ul id="panierListe"></ul>
         </main>
+    
+        <script>
+            function afficherPanier() {
+                let panierListe = document.getElementById('panierListe');
+                panierListe.innerHTML = '';
+    
+                for (let i = 0; i < localStorage.length; i++) {
+                    let boisson = localStorage.key(i);
+                    let quantite = localStorage.getItem(boisson);
+    
+                    let li = document.createElement('li');
+                    li.textContent = `${boisson} - Quantité : ${quantite}`;
+                    panierListe.appendChild(li);
+                }
+            }
+            afficherPanier();
+        </script>
+
+
+
 
         <footer class="text-center text-lg-start bg-success text-muted">
             

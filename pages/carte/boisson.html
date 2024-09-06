@@ -32,36 +32,55 @@
             </section>
         </header>
 
-        <main id="main-boisson">
-          <article class="article-boisson" id="boisson1">
-            <img src="">
-            <div class="container-boisson" id="">
-              <h3>Limoncello Spritz</h3>
-              <p>Ingrédients principaux : Limoncello, prosecco, eau gazeuse, glaçons, rondelle de citron</p>
-            </div>
-            <div class="container-button">
-              <button id="boisson1-bouton-moins"><p>-</p></button>
-              <button id="boisson1-bouton-plus"><p>+</p></button>
-            </div>
-            <p class="nombre-article" style="font-size: 100px;
-    color: white;" id="nombre-boisson1"></p>
-          </article>
 
-          <article class="article-boisson" id="boisson2">
-            <img src="">
-            <div class="container-boisson" id="">
-              <h3>Limoncello Spritz</h3>
-              <p>Ingrédients principaux : Limoncello, prosecco, eau gazeuse, glaçons, rondelle de citron</p>
-            </div>
-            <div class="container-button">
-              <button id="boisson2-bouton-moins"><p>-</p></button>
-              <button id="boisson2-bouton-plus"><p>+</p></button>
-            </div>
-            <p class="nombre-article" 
-            style="font-size: 100px;
-    color: white;" id="nombre-boisson2"></p>
-          </article>
-        </main>
+
+
+
+
+    <main id="main-boisson">
+      <h1>Nos Boissons</h1>
+      <div>
+          <span>Limoncello Spritz</span>
+          <button onclick="enleverDuPanier('Limoncello Spritz')">-</button>
+          <button onclick="ajouterAuPanier('Limoncello Spritz')">+</button>
+      </div>
+      <div>
+          <span>Soda Italien</span>
+          <button onclick="enleverDuPanier('Soda Italien')">-</button>
+          <button onclick="ajouterAuPanier('Soda Italien')">+</button>
+          
+      </div>
+      <div>
+          <span>Bière Artisanale</span>
+          <button onclick="enleverDuPanier('Bière Artisanale')">-</button>
+          <button onclick="ajouterAuPanier('Bière Artisanale')">+</button>
+      </div>
+    </main>
+
+    <script>
+        function ajouterAuPanier(boisson) {
+            let quantite = localStorage.getItem(boisson) || '0';
+            quantite = parseInt(quantite) + 1;
+            localStorage.setItem(boisson, quantite);
+            alert(boisson + " a été ajoutée au panier !");
+        }
+
+
+        function enleverDuPanier(boisson) {
+            let quantite = localStorage.getItem(boisson) || '0';
+            quantite = parseInt(quantite) - 1;
+            if (quantite <= 0) {
+                localStorage.removeItem(boisson);
+            } else {
+                localStorage.setItem(boisson, quantite);
+            }
+            alert(boisson + " a été enlevée du panier !");
+        }
+    </script>
+
+
+
+
 
         <footer class="text-center text-lg-start bg-success text-muted">
             
