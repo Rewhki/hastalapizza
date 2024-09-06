@@ -51,6 +51,16 @@ header #navbar-navbar {
     align-items: center;
 }
 
+header #panier {
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+header #panier:hover {
+    transform: scale(1.2);
+}
+
 footer {
     color: white;
 }
@@ -81,11 +91,12 @@ footer h6 a {
     justify-content: center;
     align-items: center;
     .lien-carte {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         width: 30em;
         height: 15em;
-        background-color: aqua;
-        border: 3px solid;
-        border-color: red rgb(255, 255, 255) rgb(10, 181, 1);
         border-radius: 30px;
         margin: calc(2em + 20px) calc(5em + 30px) calc(2em + 20px) calc(5em + 30px);
     
@@ -94,4 +105,21 @@ footer h6 a {
 
 #carte #main-carte .lien-carte:hover {
     transform: scale(1.2);
+}
+
+#carte #main-carte img {
+    border: 3px solid;
+    border-color: red rgb(255, 255, 255) rgb(10, 181, 1);
+    width: auto;
+    height: 15em;
+    border-radius: 30px;
+    position: relative;
+}
+
+#carte #main-carte h3 {
+    color: black;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
 }
