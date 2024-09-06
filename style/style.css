@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-body main article {
+#accueil main article {
     padding: calc(5em + 100px) calc(10em + 100px) calc(5em + 100px) calc(10em + 100px);
 }
 
@@ -94,4 +94,16 @@ footer h6 a {
 
 #carte #main-carte .lien-carte:hover {
     transform: scale(1.2);
+}
+
+/* PAGE BLOG */
+
+#blog #main-blog {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+
+#article1-blog {
+    margin-bottom: 10%;
 }
