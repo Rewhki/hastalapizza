@@ -107,3 +107,14 @@ footer h6 a {
 #article1-blog {
     margin-bottom: 10%;
 }
+
+#contact-form {
+    color:#fff;
+margin: 20%;
+margin-top: 10%;
+background-color: transparent;
+}
+
+#contact{
+    background-image:url(../images/pizza-form-contact.jpg);
+}
