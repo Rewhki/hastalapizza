@@ -71,6 +71,10 @@ footer h6 a {
     height: auto;
 }
 
+#accueil-article{
+    text-align: center;
+    margin: 100px 300px 100px 300px;
+}
 
 /* PAGE CARTE */
 
@@ -118,3 +122,4 @@ background-color: transparent;
 #contact{
     background-image:url(../images/pizza-form-contact.jpg);
 }
+
